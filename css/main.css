@@ -1,0 +1,183 @@
+body, ul, li, h1, h2, a {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: #000000;
+    padding: 35px;
+    text-align: center;
+    position: fixed; /* nó sẽ nằm dưới cái banner */
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left:0;
+}
+
+header h1 {
+    color: white;
+    padding: 5px 10px;
+    display: inline; /* nếu không có h1 nó sẽ trải dài hết trang */
+    border: 2px white solid;
+    border-radius: 6px;
+}
+
+nav {
+    background-color: #F4F4F4;
+    padding: 20px;
+    position: sticky;
+    top: 100px; /* Khi scroll đc 100px thì sticky */
+}
+
+nav ul {
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+nav li {
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav li a {
+    text-decoration: none;
+    color: grey;
+}
+
+nav li a.join {
+    color: #000000;
+    font-weight: bold;
+}
+
+main {
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+article h2 {
+    color: #333333;
+    font-size: 48px;
+}
+article p {
+    line-height: 2em;
+}
+
+.images {
+    text-align: center;
+    margin: 80px 0px;
+    white-space: nowrap;
+}
+
+.images li {
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%
+}
+
+.images li img {
+    max-width: 100%;
+}
+
+.joins {
+    background-color: #F4F4F4;
+    text-align: center;
+    padding: 60px 20px;
+    color: #4b4b4b;
+}
+
+.joins h2 {
+    color: #333333;
+    font-size: 48px;
+}
+
+form input {
+    margin: 20px 0px;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius:  28px;
+    border: 4px solid white;
+}
+
+footer {
+    background: #333333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.banner .welcome {
+    background-color: slategrey;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    left: 20%; /* Này left của cái banner */
+    top: 40%; /* Dùng percentage tốt hơn */
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 30px;
+}
+
+.banner h2 span {
+    font-size: 1.3em; /* -> 39px */
+    text-transform: uppercase;
+}
+
+
+/* PSEUDO CLASSES */
+nav li a:hover {
+    text-decoration: underline;
+}
+
+.images li:hover {
+    position: relative;
+    top: -4px;
+}
+
+form input:focus {
+    border: 4px dashed #333333;
+    outline: none;
+}
+
+form input:valid {
+    border: 4px solid green;
+    outline: none;
+}
+/* 
+nav li:first-child {
+    border: 3px solid #F63232;
+} */
+
+article p::first-line {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+section.joins p::first-letter {
+    font-size: 1.5em;
+}
+
+/* Khi chọn */
+p::selection {
+    background-color: #000000;
+    color: white
+}
+
+/* Thêm vào */
+p::after {
+    content: '...';
+}
