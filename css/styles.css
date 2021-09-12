@@ -1,0 +1,72 @@
+h1 {
+    color: orange;
+    background-color: grey;
+    font-size: 20px;
+    text-decoration: underline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+p {
+    color: slategrey;
+    text-align: left;
+    line-height: 26px;
+    /* letter-spacing: 3px; */ /* Ít dùng */
+    /* column-count: 2; 
+    column-gap: 20px; */
+}
+
+em {
+    display: block;
+}
+
+ul {
+    /* border-width: 4px;
+    border-style: solid;
+    border-color: green; */
+    border: 4px solid green;
+    border-bottom: 10px dashed red;
+    border-left: 8px dotted yellow;
+}
+
+li {
+    list-style-type: square;
+    text-shadow: 2px 2px lightgray; /* horizontal shadow (2px) and the vertical shadow (2px): */
+}
+
+
+/* p.success {
+    color: green;
+}
+
+p.danger {
+    color: red;
+}
+
+p.danger.feedback {
+    border: 1px solid slategrey;
+}
+
+p.warning {
+    color: orange;
+}
+
+div .warning {
+    font-weight: bold;
+} */
+
+a[href="/index.html"] {
+    text-decoration: none;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a[href*="about"] {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
